@@ -8,6 +8,7 @@
   "build": "tsc",
   "start": "node dist/index.js",
   "migrate": "dotenv -e .env -- prisma migrate dev",
+  "migrate:deploy": "prisma migrate deploy",
   "lint": "eslint src/**/*.ts",
   "format": "prettier --write src/**/*.ts",
   "test": "jest --runInBand"
